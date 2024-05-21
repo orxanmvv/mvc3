@@ -1,0 +1,25 @@
+﻿@model Teams
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">FullName</label>
+            <input class="form-control" asp-for="FullName">
+            <span asp-validation-for="FullName" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Job</label>
+            <input class="form-control" asp-for="Job">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input class="form-control" asp-for="Description">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input accept=".jpg , .png , .jpeg" class="form-control" asp-for="ImgFile">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
